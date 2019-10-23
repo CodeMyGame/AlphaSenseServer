@@ -20,10 +20,10 @@ app.get('/messages/:channel',
       res.json(messages[req.params.channel])
     });
 
-app.post('/sent',
+app.post('/:channel',
     (req, res) => {
       console.log(req.body);
-      messages[req.body.channel].push(req.body.message);
+      messages[req.params.channel].push(req.body.message);
       res.status(201).end();
     });
 app.listen(port,(err)=>{
