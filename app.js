@@ -31,17 +31,17 @@ app.listen(port,(err)=>{
 });
 
 const channels = [
-  'channel1',
-  'channel2',
-  'channel3',
-  'channel4',
-  'channel5',
+  'Channel1',
+  'Channel2',
+  'Channel3',
+  'Channel4',
+  'Channel5',
 ];
 
 const messages = {
-  'channel1':['kapil.kapil','sdsds'],
-  'channel2':[],
-  'channel3':[],
-  'channel4':[],
-  'channel5':[],
+  'Channel1':[],
+  'Channel2':[],
+  'Channel3':[],
+  'Channel4':[],
+  'Channel5':[],
 };
