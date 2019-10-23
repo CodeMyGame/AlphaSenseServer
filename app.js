@@ -7,6 +7,14 @@ app.use(express.json());
 app.use(cors());
 
 const port = 8080;
+
+app.get('/', (_req, res) =>
+    res.send("Server running....."));
+
+app.use(function(req, res){
+    res.send(404);
+});
+
 app.get('/channels', (_req, res) =>
     res.json(channels));
 
